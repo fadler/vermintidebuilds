@@ -7,12 +7,12 @@
 {"name": "Foot Knight",  "talents": [["Bulwark", "Bastion of the Reik", "Onslaught"], ["Regroup", "Counter-Attack", "Build Momentum"], ["Battle Drill", "Defensive Formation", "Drillmaster"], ["For the Empire!", "Soldier's Spirit", "The Harder They Fall"], ["A Life Of Battle", "Glory Hound", "Hold Ground"]]}
 ]
 },
-{"name": "Sienna Fuegonasus",
+{"name": "Bardin Goreksson",
 "careers": 
 [
-{"name": "Battle Wizard", "talents": [["Cauterise Wounds","Fuelled by Fire","Voracious Conjuring"],["World Aflame","Molten Skin","Flickerform"],["Burning Vigour","Rechannel","Centered"],["Seething Embers","Soul Snare","Blazing Harvest"],["Volans' Quickening","Lava Walker","Burnout"]]}, 
-{"name": "Pyromancer", "talents": [["Focusing Lens","Martial Study","Natural Talent"],["Ashen Form","Dissipate","Quickening"],["Shield of Tarnus","Blazing Equilibrium","One with the Flame"],["Seething Embers","Soul Snare","Blazing Harvest"],["Exhaust","Bonded Flame","Fiery Heart"]]},
-{"name": "Unchained",  "talents": [["Backblast","Form of the Fire Wind","Volcanic Body"],["Feuerbach's Fury","Essence Syphon","Seared Nerves"],["Dissipate","Conduit","Natural Talent"],["Seething Embers","Soul Snare","Blazing Harvest"],["Flame Wave","Blazing Crescendo","Tick. Tick,Tick."]]}
+{"name": "Ranger Veteran", "talents": [["Hunter's Eye","Apply Pressure","Foe-Feller"],["Last Resort","No Dawdling!","Curl up"],["Battle-Brew","Grungni's Cunning","Master Brewer"],["Just Drunk Enough","Grudge-Borne","Grimnir's Champion"],["Ranger's Ambush","Preparation","Catch a Breath"]]}, 
+{"name": "Ironbreaker", "talents": [["Shield of Valaya","Stoutfellow","Indefatigable"],["Gazul's Duty","Irondrake","Miner's Rhythm"],["Ironbreaker's Resolve","Rune-Forged","Tunnel fighter"],["Just Drunk Enough","Grudge-Borne","Grimnir's Champion"],["Heart of Gromril","Booming Taunt","Oi! Wazzok!"]]},
+{"name": "Slayer",  "talents": [["Stoutfellow","Hack and Slash","See it Coming"],["Oblivious to Pain","Stunty Saviour","Crippling Wounds"],["Unstoppable!","Moving Target","Adrenaline Surge"],["Just Drunk Enough","Grudge-Borne","Grimnir's Champion"],["Crunch!","Unstoppable","No Escape"]]}
 ]
 },
 {"name": "Kerillian",
@@ -23,20 +23,20 @@
 {"name": "Shade",  "talents": [["Hukon's Tenacity","Fury of Anath Raema","Shadowstep"],["Gladerunner","Venomblood of Ellinill","Hekarti's Bounty"],["Ereth Khial's Herald","Mistress of Sacrifice","Bloodfletcher"],["Weavebond","Khaine's Thirst","Champion of Athel Loren"],["Veilwalker","Shadowhunter","Shadespirit"]]}
 ]
 },
-{"name": "Bardin Goreksson",
-"careers": 
-[
-{"name": "Ranger Veteran", "talents": [["Hunter's Eye","Apply Pressure","Foe-Feller"],["Last Resort","No Dawdling!","Curl up"],["Battle-Brew","Grungni's Cunning","Master Brewer"],["Just Drunk Enough","Grudge-Borne","Grimnir's Champion"],["Ranger's Ambush","Preparation","Catch a Breath"]]}, 
-{"name": "Ironbreaker", "talents": [["Shield of Valaya","Stoutfellow","Indefatigable"],["Gazul's Duty","Irondrake","Miner's Rhythm"],["Ironbreaker's Resolve","Rune-Forged","Tunnel fighter"],["Just Drunk Enough","Grudge-Borne","Grimnir's Champion"],["Heart of Gromril","Booming Taunt","Oi! Wazzok!"]]},
-{"name": "Slayer",  "talents": [["Stoutfellow","Hack and Slash","See it Coming"],["Oblivious to Pain","Stunty Saviour","Crippling Wounds"],["Unstoppable!","Moving Target","Adrenaline Surge"],["Just Drunk Enough","Grudge-Borne","Grimnir's Champion"],["Crunch!","Unstoppable","No Escape"]]}
-]
-},
 {"name": "Victor Saltzpyre",
 "careers": 
 [
 {"name": "Witch Hunter Captain", "talents": [["Charmed Life","Unflagging Spirit","Always Prepared"],["Abjure Temptation","Deathknell","Suffer No Heresy"],["Marked for Death","Justice's Bounty","Wild Fervour"],["Holy Cause","Righteous Zeal","Purifier"],["Redoubled Purpose","Resonating Faith","Fierce Oratory"]]}, 
 {"name": "Bounty Hunter", "talents": [["Swift Reload","Make Them Count","Vicious Virtue"],["Leave None Behind","Necessary Means","Crippling Strike"],["Pious Fervour","Cruel Fortune","Prize Bounty"],["Holy Cause","Righteous Zeal","Purifier"],["Encore","Double-shotted","Buckshot"]]},
 {"name": "Zealot",  "talents": [["Holy Endurance","Saint of Battle","Strong of Will"],["No Surrender!","Flagellant","Suppress Pain"],["Shield of Faith","Holy Crusader","Undying Fervour"],["Holy Cause","Righteous Zeal","Purifier"],["Frother","Pleasure from Pain","Blessed Frenzy"]]}
+]
+},
+{"name": "Sienna Fuegonasus",
+"careers": 
+[
+{"name": "Battle Wizard", "talents": [["Cauterise Wounds","Fuelled by Fire","Voracious Conjuring"],["World Aflame","Molten Skin","Flickerform"],["Burning Vigour","Rechannel","Centered"],["Seething Embers","Soul Snare","Blazing Harvest"],["Volans' Quickening","Lava Walker","Burnout"]]}, 
+{"name": "Pyromancer", "talents": [["Focusing Lens","Martial Study","Natural Talent"],["Ashen Form","Dissipate","Quickening"],["Shield of Tarnus","Blazing Equilibrium","One with the Flame"],["Seething Embers","Soul Snare","Blazing Harvest"],["Exhaust","Bonded Flame","Fiery Heart"]]},
+{"name": "Unchained",  "talents": [["Backblast","Form of the Fire Wind","Volcanic Body"],["Feuerbach's Fury","Essence Syphon","Seared Nerves"],["Dissipate","Conduit","Natural Talent"],["Seething Embers","Soul Snare","Blazing Harvest"],["Flame Wave","Blazing Crescendo","Tick. Tick,Tick."]]}
 ]
 }
 ]
