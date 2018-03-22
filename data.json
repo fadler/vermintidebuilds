@@ -1,1 +1,10 @@
-
+[
+{"name": "Markus Kruber",
+"careers": 
+[
+{"name": "Mercenary", "talents": [["Ready for Action", "And Stay Down!", "Battle Scars"], ["The More the Merrier!", "Desperate Defiance", "Shrug it Off"], ["Reikland Reaper", "Blade Barrier", "Strike Together"], ["For the Empire!", "Soldier's Spirit", "The Harder They Fall"], ["Gabbler", "Inspirational", "On Yer Feet, Mates!"]]}, 
+{"name": "Huntsman", "talents": [["Keep `Em Coming", "On Target", "Outdoorsman"], ["Scavenger", "Make 'Em Bleed", "Hands Off!"], ["Taal's Blessing'", "Makin' It Look Easy", "Thrill of the Hunt"], ["For the Empire!", "Soldier's Spirit", "The Harder They Fall"], ["Blend In", "Hunter's Respite", "I'm Coming For Ya"]]},
+{"name": "Foot Knight",  "talents": [["Bulwark", "Bastion of the Reik", "Onslaught"], ["Regroup", "Counter-Attack", "Build Momentum"], ["Battle Drill", "Defensive Formation", "Drillmaster"], ["For the Empire!", "Soldier's Spirit", "The Harder They Fall"], ["A Life Of Battle", "Glory Hound", "Hold Ground"]]}
+]
+}
+]
