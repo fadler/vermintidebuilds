@@ -3,14 +3,33 @@ var _data;
 var career_select;
 var talents_div;
 
+function updateHash(hash){
+	if(history.pushState){
+	    history.pushState(null, null, hash);
+	}else{
+	    location.hash = hash;
+	}
+}
+
 function resetTalents() {
 	talents_div.find('.talent > .talent-content').text('');
 	talents_div.find('.alert-success').removeClass('alert-success');
+	updateHash('#');
 }
 
 function onTalentClick(e) {		
 	$(this).closest('.talents').find('.alert-success').removeClass('alert-success');
 	$(this).addClass('alert-success');
+	
+	var talents_div = $(this).closest('#talents-div');
+	var talents_alert_success = talents_div.find('.alert-success');
+	if(talents_alert_success.length == (talents_div.find('.alert').length) / 3){
+		var hash = '#' + career_select.val();
+		talents_alert_success.each(function(){
+			hash += $(this).closest('.talent').attr('data-talent');
+		});
+		updateHash(hash);
+	}
 }
 
 function onCareerSelect(e) {
@@ -24,7 +43,7 @@ function onCareerSelect(e) {
 	
 	var career = _data[val_hero].careers[val_career];
 	var talents = career.talents;
-	for (var i =0; i < talents.length; i++) {
+	for (var i = 0; i < talents.length; i++) {
 		var tier_div = talents_div.find('#talents-' + i);
 		var tier = talents[i];
 		var talent_col = tier_div.children().first();
@@ -50,7 +69,20 @@ function initData() {
 	
 	career_select.on('change', onCareerSelect);
 	
-	talents_div.on('click','.talent-content',onTalentClick);
+	talents_div.on('click','.talent-content', onTalentClick);
+	
+	
+	var hash = location.hash;
+	if(hash.length === 8){
+		var params = hash.split('');
+		career_select.val(params[1] + '' + params[2]).change();
+		
+		var index = 3;
+		talents_div.find('.talents').each(function(){
+			var tier_talents = $(this).find('.talent:eq('+ params[index++] +')');
+			tier_talents.find('.talent-content').click();
+		});
+	}
 }
 
 $(function() {
