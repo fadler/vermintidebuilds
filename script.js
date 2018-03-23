@@ -2,6 +2,7 @@
 var _data;
 var career_select;
 var talents_div;
+var share_link;
 
 function updateHash(hash){
 	if(history.pushState){
@@ -12,9 +13,13 @@ function updateHash(hash){
 }
 
 function resetTalents() {
-	talents_div.find('.talent > .talent-content').text('');
+	var talent_content = talents_div.find('.talent > .talent-content');
+	talent_content.find('.talent-name').text();
+	talent_content.find('.talent-description').text();
 	talents_div.find('.alert-success').removeClass('alert-success');
 	updateHash('#');
+	share_link.closest('#share-link-container').prop('hidden', true);
+	share_link.val();
 }
 
 function onTalentClick(e) {		
@@ -29,6 +34,8 @@ function onTalentClick(e) {
 			hash += $(this).closest('.talent').attr('data-talent');
 		});
 		updateHash(hash);
+		share_link.closest('#share-link-container').removeAttr('hidden');
+		share_link.val(location);
 	}
 }
 
@@ -48,7 +55,9 @@ function onCareerSelect(e) {
 		var tier = talents[i];
 		var talent_col = tier_div.children().first();
 		for (var j = 0; j< tier.length; j++) {
-			talent_col.find('.talent-content').text(tier[j]);
+			var talent_content = talent_col.find('.talent-content');
+			talent_content.find('.talent-name').text(tier[j]['name']);
+			talent_content.find('.talent-description').text(tier[j]['description']);
 			talent_col = talent_col.next();
 		}
 	}
@@ -71,6 +80,12 @@ function initData() {
 	
 	talents_div.on('click','.talent-content', onTalentClick);
 	
+	$('#copy-link').click(function(){
+		share_link.select();
+		document.execCommand("copy");
+		share_link.blur();
+	});
+	
 	
 	var hash = location.hash;
 	if(hash.length === 8){
@@ -88,9 +103,11 @@ function initData() {
 $(function() {
 	career_select = $('#career-select');
 	talents_div = $('#talents-div');	
+	share_link = $('#share-link');
 	
 	$.ajax({
 		url: 'data.json',
+		cache: false,
 		dataType: 'json',
 		success: function(data) {
 			_data = data;

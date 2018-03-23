@@ -1,3 +1,14 @@
-.talent {
+.talent 
+{
 	cursor: pointer;
+}
+
+.talent-name
+{
+	font-weight: bold;
+}
+
+#share-link
+{
+	background-color: white;
 }
