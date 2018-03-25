@@ -10,106 +10,160 @@
   <meta name="author" content="Franz Karl Adler, Valentin Josef Adler">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
   <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Vermintidebuilds</h1>
+  <main class="container" role="main">
+    <h1 class="page-header text-danger text-uppercase"><b>Vermintidebuilds</b></h1>
     <div class="row">
       <div class="col-sm-3">
 		    <form>
 		      <div class="form-group">
 		        <label for="career-select" class="">Career</label>
-		        <select class="form-control" id="career-select">
-		          
+		        <select class="form-control" id="career-select">		          
 		        </select>		
 		      </div>		      
 		    </form>
 	    </div>
+      <div class="col-sm-3" id="storage-btn-div" hidden="hidden">
+        <form>
+          <div class="form-group">
+            <label for="storage-btn" class="">&nbsp;</label> 
+            <button class="form-control btn btn-danger" id="storage-btn">
+              Saved Builds&nbsp;&nbsp;<i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        </form>   
+      </div>
     </div>
-    <div id="talents-div" class="text-center" hidden>
-      <div class="card">        
-        <ul class="list-group list-group-flush">
+    <div id="storage-div" hidden="hidden">
+      <div class="card border-danger mb-3">
+        <div class="card-header bg-danger">Saved Builds</div>
+        <ul class="list-group list-group-flush" id="storage-list">             
+        </ul>
+      </div>
+    </div>
+    <div id="talents-div" class="text-center" hidden="hidden">
+			<div class="card border-danger mb-3">
+				<div class="card-header bg-danger"><b>Passive Abilities</b></div>
+				<div id="passives" class="card-body"></div>
+			</div>
+			<div class="card border-danger mb-3">
+				<div class="card-header bg-danger"><b>Career Skill</b></div>
+				<div id="skill" class="card-body"></div>
+			</div>
+			<div class="card border-danger ">
+        <div class="card-header bg-danger">
+    <b>Talents</b>
+  </div>
+   <div class="card-body">   
+        <ul class="list-group list-group-flush">   
           <li class="list-group-item">
             <h4>Level 5</h4>
 	          <div class="row talents" id="talents-0">      
-	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
 	          </div>
           </li>
           <li class="list-group-item">
             <h4>Level 10</h4>
 			      <div class="row talents" id="talents-1">			      	   
-			        <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-			        <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-			        <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
+			        <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+			        <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+			        <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
 		        </div>
 	        </li>
           <li class="list-group-item">
             <h4>Level 15</h4>
 	          <div class="row talents" id="talents-2">      
-	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
 	          </div>
 	        </li>
           <li class="list-group-item">
             <h4>Level 20</h4>
 	          <div class="row talents" id="talents-3">      
-	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
             </div>
           </li>
           <li class="list-group-item">
             <h4>Level 25</h4>
 	          <div class="row talents" id="talents-4">      
-	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
-	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="0"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="1"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
+	            <div class="col-12 col-sm-4 talent" data-talent="2"><div class="talent-content alert"><div class="talent-name carrer-title"></div><div class="talent-description"></div></div></div>
 	          </div>
           </li>
         </ul>
+        </div>
       </div>
-			<div id="share-link-container" class="row justify-content-center"
-				hidden>
-				<div class="input-group input-group-sm mb-3 mt-3 col col-md-8 col-lg-6">
-					<div class="input-group-prepend">
-						<span class="input-group-text" id="share-link-label">Link
-							for Sharing</span>
+      
+      <div id="build-done-stuff" hidden="hidden" class="card bg-secondary mt-3 mb-3">
+	      <div class="card-body">
+					<div class="row justify-content-center">
+						<div class="input-group input-group-sm mb-3 mt-3 col col-md-8 col-lg-6">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="share-link-label">Share</span>
+							</div>
+							<input id="share-link" type="text" class="form-control"
+								aria-label="Link for Sharing" aria-describedby="share-link-label"
+								readonly>
+							<div class="input-group-append">
+								<button class="btn btn-danger" type="button"
+									id="copy-link">Copy Link</button>
+							</div>
+		
+						</div>
 					</div>
-					<input id="share-link" type="text" class="form-control"
-						aria-label="Link for Sharing" aria-describedby="share-link-label"
-						readonly>
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button"
-							id="copy-link">Copy to Clipboard</button>
+					<div class="row justify-content-center">
+						<div class="input-group input-group-sm mb-3 col col-md-8 col-lg-6">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="share-link-label">Save Build As</span>
+							</div>
+							<input id="save-to-storage-input" type="text" class="form-control"
+								aria-label="Link for Sharing" aria-describedby="share-link-label"
+								>
+							<div class="input-group-append">
+								<button class="btn btn-danger" type="button"
+									id="save-to-storage-button" disabled>Save</button>
+							</div>
+		
+						</div>
 					</div>
-
 				</div>
 			</div>
-		</div>
-    <div id="footer" class="row mt-3">
-      <div class="col">        
+		</div>		
+  </main>
+  <footer class="bg-danger text-white pt-4" id="footer">
+    <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6" id="footer-left">        
         Made by: 
         <ul class="list-unstyled">
-          <li>Franz Karl "Imbaer" Adler (<a href="https://twitter.com/ZeImbaer" target="_blank">Twitter</a>)</li>
+          <li>Franz Karl "Imbaer" Adler <a class="text-white" href="https://twitter.com/ZeImbaer" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
           <li>Valentin Adler</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-12 col-sm-6" id="footer-right">
        Version:
          <ul class="list-unstyled">
-          <li>Alpha 2</li>
+          <li>v0.3-alpha</li>
+          <li><a class="text-white" href="https://github.com/fadler/vermintidebuilds" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
     </div>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>

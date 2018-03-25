@@ -4,6 +4,24 @@
     "careers":[
       {
         "name":"Mercenary",
+        "passives":[
+          {
+            "name":"Paced Strikes",
+            "description":"Hitting 3 enemies in one swing grants 10% increased attack speed for 6 seconds."
+          },
+          {
+            "name":"Hitting the Sweet Spot",
+            "description":"Attacks cleave through more enemies."
+          },
+          {
+            "name":"No More Laughin' Now!",
+            "description":"Increased crit chance."
+          }
+        ],
+        "skill":{
+          "name":"Morale Boost",
+          "description":"Markus grants nearby party members a boost of temprary health and staggers nearby enemies."
+        },
         "talents":[
           [
             {
@@ -79,6 +97,24 @@
       },
       {
         "name":"Huntsman",
+        "passives":[
+          {
+            "name":"Waste Not, Want Not",
+            "description":"Ranged headshots recovers 1 ammunition."
+          },
+          {
+            "name":"Poacher's Mark",
+            "description":"Double effective range for ranged weapons."
+          },
+          {
+            "name":"Call Out Weakness",
+            "description":"Critical strike chance aura."
+          }
+        ],
+        "skill":{
+          "name":"Hunter's Prowl",
+          "description":"Markus disappears from sight for a brief period, allowing him to ambush foes."
+        },
         "talents":[
           [
             {
@@ -154,6 +190,24 @@
       },
       {
         "name":"Foot Knight",
+          "passives":[
+          {
+            "name":"Protective Presence",
+            "description":"Damage resistance aura."
+          },
+          {
+            "name":"Taal's Fortitude'",
+            "description":"Increased stamina."
+          },
+          {
+            "name":"No Guts, No Glory",
+            "description":"Reduced damage taken."
+          }
+        ],
+        "skill":{
+          "name":"Valiant Charge",
+          "description":"Markus charges forward, slamming into enemies and knocking them back."
+        },
         "talents":[
           [
             {
@@ -234,6 +288,24 @@
     "careers":[
       {
         "name":"Ranger Veteran",
+         "passives":[
+          {
+            "name":"Survivalist",
+            "description":"Specials drop ammo pickups on death."
+          },
+          {
+            "name":"Loaded for Battle",
+            "description":"Increased ammo capacity."
+          },
+          {
+            "name":"Fast Hands",
+            "description":"Increased reload speed."
+          }
+        ],
+        "skill":{
+          "name":"Disengage",
+          "description":" Bardin deploys a smoke bomb that conceals him from enemies whilst he stays inside the cloud."
+        },
         "talents":[
           [
             {
@@ -309,6 +381,28 @@
       },
       {
         "name":"Ironbreaker",
+          "passives":[
+          {
+            "name":"Gromril Armour",
+            "description":"Completely absorbs one hit every 20 seconds."
+          },
+          {
+            "name":"Dwarf-Forged",
+            "description":"Reduced damage taken."
+          },
+          {
+            "name":"Doughty",
+            "description":"Increased stamina."
+          },
+          {
+            "name":"Resilient",
+            "description":"Increased stun resistance."
+          }
+        ],
+        "skill":{
+          "name":"Impenetrable",
+          "description":"Bardin taunts all nearby man-sized enemies, gains increased defense and can block any attack for the next 10 seconds."
+        },
         "talents":[
           [
             {
@@ -384,6 +478,20 @@
       },
       {
         "name":"Slayer",
+        "passives":[
+          {
+            "name":"Trophy Hunter",
+            "description":"Stacking damage buff on hitting an enemy."
+          },
+          {
+            "name":"Path of Carnage",
+            "description":"Increased attack speed."
+          }
+        ],
+        "skill":{
+          "name":"Leap",
+          "description":"Bardin leaps forward to stun a target, and gain a burst of attack speed."
+        },
         "talents":[
           [
             {
@@ -464,6 +572,24 @@
     "careers":[
       {
         "name":"Waystalker",
+                "passives":[
+          {
+            "name":"Amaranthe",
+            "description":"Kerillian regenerates health over time when below half health."
+          },
+          {
+            "name":"Arrow-storm",
+            "description":"Increased ammo capacity."
+          },
+          {
+            "name":"Waywatcher's Bow",
+            "description":"Double effective range for ranged weapons."
+          }
+        ],
+        "skill":{
+          "name":"Trueshot Volley",
+          "description":"Kerillian shoots a volley of arrows that seek out enemies in her path."
+        },
         "talents":[
           [
             {
@@ -539,6 +665,24 @@
       },
       {
         "name":"Handmaiden",
+          "passives":[
+          {
+            "name":"The Dance of Seasons",
+            "description":"Increased dodge distance."
+          },
+          {
+            "name":"Renewal",
+            "description":"Stamina regeneration aura."
+          },
+          {
+            "name":"Ariel's Benison",
+            "description":"Revive can't be interrupted by damaging attacks."
+          }
+        ],
+        "skill":{
+          "name":"Dash",
+          "description":"Kerillian dashes forward through enemies. Hitting enemies with this ability causes them to bleed."
+        },
         "talents":[
           [
             {
@@ -614,6 +758,20 @@
       },
       {
         "name":"Shade",
+        "passives":[
+          {
+            "name":"Murderous Prowess",
+            "description":"Critical hit backstabs instantly slay man-sized enemies."
+          },
+          {
+            "name":"Assassin's Blade",
+            "description":"50% additional damage when attacking enemies from behind."
+          }
+        ],
+        "skill":{
+          "name":"Infiltrate",
+          "description":"Kerillian becomes undetectable and can pass through enemies. Lasts for 10 seconds, or until she attacks."
+        },
         "talents":[
           [
             {
@@ -694,6 +852,24 @@
     "careers":[
       {
         "name":"Witch Hunter Captain",
+         "passives":[
+          {
+            "name":"Witch-Hunt",
+            "description":"Tagged enemies take additional damage."
+          },
+          {
+            "name":"Eternal Guard",
+            "description":"No light attack block cost from frontal attacks."
+          },
+          {
+            "name":"Killing Shot",
+            "description":"Critical hit headshots instantly slay man-sized enemies."
+          }
+        ],
+        "skill":{
+          "name":"Animosity",
+          "description":"Victor pushes back nearby enemies, and boosts nearby allies' critial hit chance for 6 seconds."
+        },
         "talents":[
           [
             {
@@ -769,6 +945,24 @@
       },
       {
         "name":"Bounty Hunter",
+        "passives":[
+          {
+            "name":"Blessed Shots",
+            "description":"Guaranteed ranged critical hit every 10 seconds or on melee kill."
+          },
+          {
+            "name":"Ammo Pouches",
+            "description":"Increased ammo capacity."
+          },
+          {
+            "name":"Quick Release",
+            "description":"Increased reload speed."
+          }
+        ],
+        "skill":{
+          "name":"Locked and Loaded",
+          "description":"Victor fires a powerful shot that pierces enemies."
+        },
         "talents":[
           [
             {
@@ -844,6 +1038,24 @@
       },
       {
         "name":"Zealot",
+         "passives":[
+          {
+            "name":"Fiery Faith",
+            "description":"Power increases by 5% for every 25 health missing to a maximum bonus of 20%."
+          },
+          {
+            "name":"Unswerving Strikes",
+            "description":"Heavy attacks can't be interrupted by damaging attacks."
+          },
+          {
+            "name":"Heart of Iron",
+            "description":"Resist death on taking lethal damage."
+          }
+        ],
+        "skill":{
+          "name":"Holy Fervor",
+          "description":"Victor charges forward and gains 25% increased attack speed for 5 seconds."
+        },
         "talents":[
           [
             {
@@ -924,6 +1136,24 @@
     "careers":[
       {
         "name":"Battle Wizard",
+        "passives":[
+          {
+            "name":"Tranquility",
+            "description":"Avoiding damage and not casting spells for 8 seconds automatically ventilates Overcharge."
+          },
+          {
+            "name":"Reckless Haste",
+            "description":"Overcharge increases spell charge speed."
+          },
+          {
+            "name":"Pyromatic Surge",
+            "description":"Increased ranged damage."
+          }
+        ],
+        "skill":{
+          "name":"Fire Walk",
+          "description":"Sienna teleports forward, leaving a blanket of fire in her wake."
+        },
         "talents":[
           [
             {
@@ -999,6 +1229,20 @@
       },
       {
         "name":"Pyromancer",
+        "passives":[
+          {
+            "name":"Critical Mass",
+            "description":"Increased critical strike chance based on Overcharge level."
+          },
+          {
+            "name":"Searing Focus",
+            "description":"Increased ranged damage."
+          }
+        ],
+        "skill":{
+          "name":"The Burning Head",
+          "description":"Sienna unleashes a fiery projectile that seeks out foes."
+        },
         "talents":[
           [
             {
@@ -1074,6 +1318,28 @@
       },
       {
         "name":"Unchained",
+         "passives":[
+          {
+            "name":"Blood Magic",
+            "description":"50% damage taken transfered to Overcharge."
+          },
+          {
+            "name":"Slave to Aqshy",
+            "description":"No Overcharge slowdown."
+          },
+          {
+            "name":"Unstable Strength",
+            "description":"Increased melee power on high Overcharge."
+          },
+          {
+            "name":"Blazing Sinews",
+            "description":"Reduced block cost on high Overcharge, consumes Overcharge."
+          }
+        ],
+        "skill":{
+          "name":"Living Bomb",
+          "description":"Sienna explodes, dealing damage to surrounding enemies and clearing her Overcharge."
+        },
         "talents":[
           [
             {
