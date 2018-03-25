@@ -36,6 +36,11 @@ body {
 	cursor: pointer;
 }
 
+.talent-content 
+{
+	border-color: #d4d4d4;
+}
+
 .carrer-title
 {
 	font-weight: bold;
